@@ -18,6 +18,7 @@ public class ItemRepository {
             em.persist(item);
         } else {
             em.merge(item);
+            // Item m = em.merge(item) -> m이 병합된 엔티티
         }
     }
 
